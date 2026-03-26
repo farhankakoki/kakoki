@@ -1,0 +1,12 @@
+node_modules/
+.build_tools/
+.vscode/
+.env
+dist/
+build/
+*.log
+fix.js
+modal-fix.js
+strip-html.js
+strip-sub-html.js
+fix-assets.js
