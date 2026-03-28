@@ -22,4 +22,4 @@ User-agent: anthropic-ai
 Disallow: /
 
 # SITEMAP INJECTION
-Sitemap: https://kakokicreative.in/sitemap.xml
+Sitemap: https://www.kakokicreative.in/sitemap.xml

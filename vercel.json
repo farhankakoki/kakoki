@@ -8,7 +8,7 @@
           "value": "kakokicreative.live"
         }
       ],
-      "destination": "https://kakokicreative.in/$1",
+      "destination": "https://www.kakokicreative.in/$1",
       "permanent": true
     },
     {
@@ -19,7 +19,18 @@
           "value": "www.kakokicreative.live"
         }
       ],
-      "destination": "https://kakokicreative.in/$1",
+      "destination": "https://www.kakokicreative.in/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "kakokicreative.in"
+        }
+      ],
+      "destination": "https://www.kakokicreative.in/$1",
       "permanent": true
     }
   ],
