@@ -11,3 +11,13 @@ strip-html.js
 strip-sub-html.js
 fix-assets.js
 portfolio-archive.html
+.agents/
+.agent/
+.gemini/
+.claude/
+.DS_Store
+Thumbs.db
+*.tmp
+scripts/
+temp/
+backup/

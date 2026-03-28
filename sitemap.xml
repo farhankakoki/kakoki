@@ -9,15 +9,15 @@
   <!-- Core Authority Hub -->
   <url>
     <loc>https://kakokicreative.in/</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- Master Service Areas Hub -->
   <url>
-    <loc>https://kakokicreative.in/service-areas-malappuram</loc>
-    <lastmod>2026-03-24</lastmod>
+    <loc>https://kakokicreative.in/service-areas-malappuram/</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -25,32 +25,76 @@
   <!-- Primary Conversion Pipeline -->
   <url>
     <loc>https://kakokicreative.in/contact/</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Local Architecture Spoke 1 (Malappuram Target) -->
   <url>
-    <loc>https://kakokicreative.in/web-design-malappuram</loc>
-    <lastmod>2026-03-24</lastmod>
+    <loc>https://kakokicreative.in/web-design-malappuram/</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Local Architecture Spoke 2 (Areekode Target) -->
   <url>
-    <loc>https://kakokicreative.in/branding-areekode</loc>
-    <lastmod>2026-03-24</lastmod>
+    <loc>https://kakokicreative.in/branding-areekode/</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Local Architecture Spoke 3 (Kondotty Target) -->
   <url>
-    <loc>https://kakokicreative.in/creative-agency-kondotty</loc>
-    <lastmod>2026-03-24</lastmod>
+    <loc>https://kakokicreative.in/creative-agency-kondotty/</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- Programmatic SEO Regional Expansion -->
+  <url>
+    <loc>https://kakokicreative.in/regional/branding-malappuram/</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kakokicreative.in/regional/web-design-kondotty/</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kakokicreative.in/regional/branding-agency-kerala/</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kakokicreative.in/regional/web-agency-malappuram/</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kakokicreative.in/regional/branding-areekode/</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kakokicreative.in/regional/graphic-designer-kizhisseri/</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kakokicreative.in/regional/web-agency-areekode/</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

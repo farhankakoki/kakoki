@@ -17,7 +17,7 @@ if (contactForm) {
       errEl = document.createElement("p");
       errEl.id = "form-error-msg";
       errEl.style.cssText =
-        "color:#c0392b;font-size:0.75rem;font-weight:600;margin:12px 0 0;text-align:center;line-height:1.4;text-transform:uppercase;letter-spacing:0.05em;";
+        "color:#ff0000;font-size:0.75rem;font-weight:700;margin:12px 0 0;text-align:center;line-height:1.4;text-transform:uppercase;letter-spacing:0.1em;border-top:1px solid #eee;padding-top:10px;";
       contactForm.appendChild(errEl);
     }
     errEl.textContent = message;
@@ -30,13 +30,12 @@ if (contactForm) {
 
   function showPopup() {
     if (successPopup && popupOverlay) {
-        // Remove hidden and set display
         successPopup.classList.remove("hidden");
         popupOverlay.classList.remove("hidden");
+        popupOverlay.classList.add("flex");
         
-        // Use timeout to allow transition
         setTimeout(() => {
-          popupOverlay.classList.remove("opacity-0");
+          popupOverlay.style.opacity = "1";
           successPopup.style.opacity = "1";
           successPopup.style.transform = "translate(-50%, -50%) scale(1)";
         }, 10);
@@ -45,13 +44,14 @@ if (contactForm) {
 
   function hidePopup() {
     if (successPopup && popupOverlay) {
-        popupOverlay.classList.add("opacity-0");
+        popupOverlay.style.opacity = "0";
         successPopup.style.opacity = "0";
         successPopup.style.transform = "translate(-50%, -50%) scale(0.95)";
         
         setTimeout(() => {
           successPopup.classList.add("hidden");
           popupOverlay.classList.add("hidden");
+          popupOverlay.classList.remove("flex");
           if (typeof closeContactModal === "function") {
             closeContactModal();
           }
@@ -60,10 +60,12 @@ if (contactForm) {
   }
 
   if (closePopupBtn) closePopupBtn.addEventListener("click", hidePopup);
-  if (popupOverlay) popupOverlay.addEventListener("click", hidePopup);
+  if (popupOverlay) popupOverlay.addEventListener("click", (e) => {
+      if (e.target === popupOverlay) hidePopup();
+  });
 
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && successPopup && successPopup.style.display === "block") {
+    if (e.key === "Escape" && successPopup && !successPopup.classList.contains("hidden")) {
       hidePopup();
     }
   });
@@ -78,58 +80,44 @@ if (contactForm) {
     const projectType = contactForm.querySelector("#project_type").value.trim();
     const message = contactForm.querySelector("#message").value.trim();
     const serviceAreaEl = contactForm.querySelector('input[name="service_area"]');
-    const serviceArea = serviceAreaEl ? serviceAreaEl.value.trim() : "Default";
+    const serviceArea = serviceAreaEl ? serviceAreaEl.value.trim() : "Kerala";
     const leadSourceEl = contactForm.querySelector('input[name="lead_source"]');
-    const leadSource = leadSourceEl ? leadSourceEl.value.trim() : "Main Form";
+    const leadSource = leadSourceEl ? leadSourceEl.value.trim() : "Main Site";
     
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const phoneDigits = phone.replace(/\D/g, "");
 
     if (!name || !phone || !email || !projectType || !message) {
-      showFormError("Please fill in all fields before submitting.");
+      showFormError("ALL FIELDS ARE REQUIRED");
       return;
     }
 
-    if (phoneDigits.length < 10) {
-      showFormError("Please enter a valid phone number.");
+    if (phone.replace(/\D/g, "").length < 10) {
+      showFormError("VALID PHONE NUMBER REQUIRED");
       return;
     }
 
     if (!emailRegex.test(email)) {
-      showFormError("Please enter a valid email address.");
+      showFormError("VALID EMAIL ADDRESS REQUIRED");
       return;
     }
 
     submitBtn.disabled = true;
-    submitBtn.textContent = "Sending...";
-
-    const formattedMessage = [
-      `Name: ${name}`,
-      `Phone: ${phone}`,
-      `Email: ${email}`,
-      `Project Type: ${projectType}`,
-      `Service Area: ${serviceArea}`,
-      `Lead Source: ${leadSource}`,
-      "",
-      "Project Details:",
-      message,
-    ].join("\n");
+    submitBtn.textContent = "SENDING...";
 
     const templateParams = {
-      name,
-      from_name: name,
+      name: name,
       user_name: name,
-      phone,
+      from_name: name,
+      phone: phone,
       user_phone: phone,
-      email,
+      email: email,
       user_email: email,
       reply_to: email,
       project_type: projectType,
       service_area: serviceArea,
       lead_source: leadSource,
-      subject: `New ${projectType} inquiry from ${name}`,
-      title: `New ${projectType} inquiry`,
-      message: formattedMessage,
+      message: message,
+      subject: `New ${projectType} inquiry from ${name}`
     };
 
     emailjs
@@ -142,9 +130,7 @@ if (contactForm) {
       })
       .catch((err) => {
         console.error("EmailJS Error:", err);
-        showFormError(
-          "Oops! Something went wrong. Please try again or email us directly at kakokicreativeco@gmail.com"
-        );
+        showFormError("ERROR SENDING. PLEASE EMAIL DIRECTLY: kakokicreativeco@gmail.com");
         submitBtn.disabled = false;
         submitBtn.innerHTML = 'Send inquiry <i class="fa-solid fa-paper-plane ml-2"></i>';
       });
@@ -168,16 +154,16 @@ if (miniForm) {
 
     const templateParams = {
       name,
-      from_name: name,
       user_name: name,
+      from_name: name,
       phone,
       user_phone: phone,
-      reply_to: 'Inquiry via Mini-Form',
+      reply_to: 'Mini-Form Inquiry',
       project_type: 'Quick Lead',
-      service_area: 'Mini-Popup Hub',
-      lead_source: 'Homepage Mini-Popup',
-      subject: `Quick Lead Inquiry from ${name}`,
-      message: `Quick Inquiry from Mini-Popup\nName: ${name}\nPhone: ${phone}`
+      service_area: 'Home Hub',
+      lead_source: 'Mini-Popup',
+      subject: `Quick Inquiry from ${name}`,
+      message: `Quick Inquiry\nName: ${name}\nPhone: ${phone}`
     };
 
     emailjs
