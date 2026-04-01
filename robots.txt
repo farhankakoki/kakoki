@@ -1,5 +1,6 @@
 # KAKOKI Creative Co. Official Robots.txt
 # Optimized for Google Search Console, Bing Webmaster, & aggressive indexing
+# Updated: 2026-04-01 — AEO (AI Engine Optimization) enabled for topical authority
 
 User-agent: *
 Allow: /
@@ -11,14 +12,40 @@ Allow: /assets/css/
 Allow: /assets/img/
 Allow: /assets/doodles/
 
-# Block unwanted AI scrapers from scraping proprietary agency copy
+# Allow AI search engines for AEO (AI Engine Optimization)
+# These crawlers power ChatGPT, Perplexity, and Gemini answers — allowing them
+# ensures our content surfaces in AI-generated search responses.
 User-agent: GPTBot
-Disallow: /
+Allow: /blog/
+Allow: /web-design-malappuram/
+Allow: /web-design-manjeri/
+Allow: /web-design-perinthalmanna/
+Allow: /web-design-tirur/
+Allow: /web-design-kozhikode/
+Allow: /gulf-nri-web-design/
+Allow: /regional/
+Allow: /service-areas-malappuram/
+Disallow: /assets/
+
 User-agent: ChatGPT-User
-Disallow: /
-User-agent: CCBot
-Disallow: /
+Allow: /blog/
+Allow: /web-design-malappuram/
+Allow: /gulf-nri-web-design/
+Allow: /regional/
+Disallow: /assets/
+
+User-agent: PerplexityBot
+Allow: /
+
 User-agent: anthropic-ai
+Allow: /blog/
+Allow: /web-design-malappuram/
+Allow: /gulf-nri-web-design/
+Allow: /regional/
+Disallow: /assets/
+
+# Block content scrapers with no indexing value
+User-agent: CCBot
 Disallow: /
 
 # SITEMAP INJECTION
