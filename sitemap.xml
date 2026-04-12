@@ -1,154 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <!-- 
-  ==============================================================
-  KAKOKI CREATIVE CO : DYNAMIC GOOGLE SEARCH CONSOLE SITEMAP
-  Last Updated: 2026-04-01
-  ============================================================== 
-  -->
-  
-  <!-- Core Authority Hub -->
+
+  <!-- Homepage — Brand Hub -->
   <url>
     <loc>https://www.kakokicreative.in/</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Primary Conversion Pipeline -->
+  <!-- Primary Service: Web Design Malappuram -->
   <url>
-    <loc>https://www.kakokicreative.in/contact/</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Master Service Areas Hub -->
-  <url>
-    <loc>https://www.kakokicreative.in/service-areas-malappuram/</loc>
-    <lastmod>2026-04-01</lastmod>
+    <loc>https://www.kakokicreative.in/web-design-malappuram/</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Gulf/NRI Priority Page -->
+  <!-- Primary Service: Branding Areekode -->
+  <url>
+    <loc>https://www.kakokicreative.in/branding-areekode/</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Niche Service: Gulf NRI Web Design -->
   <url>
     <loc>https://www.kakokicreative.in/gulf-nri-web-design/</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Location Page: Creative Agency Kondotty -->
+  <url>
+    <loc>https://www.kakokicreative.in/creative-agency-kondotty/</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Location Page: Web Design Manjeri -->
+  <url>
+    <loc>https://www.kakokicreative.in/web-design-manjeri/</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Location Page: Web Design Perinthalmanna -->
+  <url>
+    <loc>https://www.kakokicreative.in/web-design-perinthalmanna/</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Location Page: Web Design Tirur -->
+  <url>
+    <loc>https://www.kakokicreative.in/web-design-tirur/</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Location Page: Web Design Kozhikode -->
+  <url>
+    <loc>https://www.kakokicreative.in/web-design-kozhikode/</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Service Areas Hub -->
+  <url>
+    <loc>https://www.kakokicreative.in/service-areas-malappuram/</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <!-- Blog Hub -->
   <url>
     <loc>https://www.kakokicreative.in/blog/</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
-  <!-- Blog Article #1 -->
+  <!-- Blog Article -->
   <url>
     <loc>https://www.kakokicreative.in/blog/why-every-business-in-malappuram-needs-a-professional-website-2025/</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
 
-  <!-- Local Architecture: Primary Malappuram Target -->
+  <!-- Contact Page -->
   <url>
-    <loc>https://www.kakokicreative.in/web-design-malappuram/</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Local Architecture: Areekode Target -->
-  <url>
-    <loc>https://www.kakokicreative.in/branding-areekode/</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Local Architecture: Kondotty Target -->
-  <url>
-    <loc>https://www.kakokicreative.in/creative-agency-kondotty/</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- New City Landing Pages -->
-  <url>
-    <loc>https://www.kakokicreative.in/web-design-manjeri/</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.kakokicreative.in/web-design-perinthalmanna/</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.kakokicreative.in/web-design-tirur/</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.kakokicreative.in/web-design-kozhikode/</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Programmatic SEO Regional Expansion -->
-  <url>
-    <loc>https://www.kakokicreative.in/regional/branding-malappuram/</loc>
-    <lastmod>2026-04-01</lastmod>
+    <loc>https://www.kakokicreative.in/contact/</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  <url>
-    <loc>https://www.kakokicreative.in/regional/web-design-kondotty/</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.kakokicreative.in/regional/branding-agency-kerala/</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.kakokicreative.in/regional/web-agency-malappuram/</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.kakokicreative.in/regional/branding-areekode/</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.kakokicreative.in/regional/graphic-designer-kizhisseri/</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.kakokicreative.in/regional/web-agency-areekode/</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+
 </urlset>

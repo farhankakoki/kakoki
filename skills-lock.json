@@ -1,6 +1,16 @@
 {
   "version": 1,
   "skills": {
+    "frontend-design": {
+      "source": "jwynia/agent-skills",
+      "sourceType": "github",
+      "computedHash": "df017e8504626f06e14b093dcf668ada5b40a6fe9eaf565d2cc54b0997d7927a"
+    },
+    "frontend-ui-ux-engineer": {
+      "source": "404kidwiz/claude-supercode-skills",
+      "sourceType": "github",
+      "computedHash": "b26907aa12835bc6eb9c2845d4177ae8c4cf43b0171f4b9fa8b59e9303a5b45a"
+    },
     "seo-audit": {
       "source": "coreyhaines31/marketingskills",
       "sourceType": "github",

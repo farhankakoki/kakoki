@@ -1,52 +1,43 @@
-# KAKOKI Creative Co. Official Robots.txt
-# Optimized for Google Search Console, Bing Webmaster, & aggressive indexing
-# Updated: 2026-04-01 — AEO (AI Engine Optimization) enabled for topical authority
+# KAKOKI Creative Co — robots.txt
+# Updated: 2026-04-06
 
+# Allow all search engines full access
 User-agent: *
 Allow: /
 
-# Ensure Googlebot can aggressively crawl CSS and JS to pass Mobile Rendering CI requirements
+# Explicitly allow Google to crawl all assets for rendering
 User-agent: Googlebot
 Allow: /
-Allow: /assets/css/
-Allow: /assets/img/
-Allow: /assets/doodles/
+Allow: /assets/
 
-# Allow AI search engines for AEO (AI Engine Optimization)
-# These crawlers power ChatGPT, Perplexity, and Gemini answers — allowing them
-# ensures our content surfaces in AI-generated search responses.
+# Allow AI crawlers — full site access so content surfaces in ChatGPT, Gemini, Perplexity
 User-agent: GPTBot
-Allow: /blog/
-Allow: /web-design-malappuram/
-Allow: /web-design-manjeri/
-Allow: /web-design-perinthalmanna/
-Allow: /web-design-tirur/
-Allow: /web-design-kozhikode/
-Allow: /gulf-nri-web-design/
-Allow: /regional/
-Allow: /service-areas-malappuram/
-Disallow: /assets/
+Allow: /
 
 User-agent: ChatGPT-User
-Allow: /blog/
-Allow: /web-design-malappuram/
-Allow: /gulf-nri-web-design/
-Allow: /regional/
-Disallow: /assets/
+Allow: /
 
 User-agent: PerplexityBot
 Allow: /
 
 User-agent: anthropic-ai
-Allow: /blog/
-Allow: /web-design-malappuram/
-Allow: /gulf-nri-web-design/
-Allow: /regional/
-Disallow: /assets/
+Allow: /
 
-# Block content scrapers with no indexing value
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block low-value scrapers only
 User-agent: CCBot
 Disallow: /
 
-# SITEMAP INJECTION
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+# Sitemap
 Sitemap: https://www.kakokicreative.in/sitemap.xml
