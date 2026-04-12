@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="en">
+<html class="scroll-smooth overflow-x-hidden" lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#050505">
 
 <title>Web Design & Branding Blog — KAKOKI Creative Co</title>
-<meta name="description" content="Insights on web design, branding, and digital marketing from KAKOKI Creative Co, a Kerala-based creative agency in Malappuram.">
+<meta name="description" content="Real talk on web design, branding, and growing your business online — written by the team at KAKOKI Creative Co in Malappuram, Kerala.">
 
 <link rel="canonical" href="https://www.kakokicreative.in/blog/">
 <link rel="alternate" hreflang="en-IN" href="https://www.kakokicreative.in/blog/">
@@ -23,7 +23,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="KAKOKI Creative Co">
 <meta property="og:title" content="Web Design & Branding Blog — KAKOKI Creative Co">
-<meta property="og:description" content="Insights on web design, branding, and digital marketing from KAKOKI Creative Co, a Kerala-based creative agency in Malappuram.">
+<meta property="og:description" content="Real talk on web design, branding, and growing your business online — written by the team at KAKOKI Creative Co in Malappuram, Kerala.">
 <meta property="og:url" content="https://www.kakokicreative.in/blog/">
 <meta property="og:image" content="https://www.kakokicreative.in/assets/img/og-cover.png">
 <meta property="og:image:width" content="1200">
@@ -34,7 +34,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@kakokicreative">
 <meta name="twitter:title" content="Web Design & Branding Blog — KAKOKI Creative Co">
-<meta name="twitter:description" content="Insights on web design, branding, and digital marketing from KAKOKI Creative Co, a Kerala-based creative agency in Malappuram.">
+<meta name="twitter:description" content="Real talk on web design, branding, and growing your business online — written by the team at KAKOKI Creative Co.">
 <meta name="twitter:image" content="https://www.kakokicreative.in/assets/img/og-cover.png">
 
 <!-- Geo Tags -->
@@ -49,10 +49,18 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Blog",
+      "@id": "https://www.kakokicreative.in/blog/#blog",
+      "name": "KAKOKI Creative Co Blog",
+      "description": "Real insights on web design, branding, and digital growth from a Kerala-based creative agency.",
+      "url": "https://www.kakokicreative.in/blog/",
+      "publisher": { "@id": "https://www.kakokicreative.in/#organization" },
+      "inLanguage": "en-IN"
+    },
+    {
       "@type": "Organization",
       "@id": "https://www.kakokicreative.in/#organization",
       "name": "KAKOKI Creative Co",
-      "alternateName": ["KAKOKI", "Kakoki Ads", "Kakoki Co"],
       "url": "https://www.kakokicreative.in/",
       "logo": {
         "@type": "ImageObject",
@@ -78,64 +86,6 @@
         "https://dribbble.com/kakokicreative",
         "https://www.linkedin.com/in/farhanmubeenk/"
       ]
-    },
-    {
-      "@type": "LocalBusiness",
-      "@id": "https://www.kakokicreative.in/#localbusiness",
-      "name": "KAKOKI Creative Co",
-      "url": "https://www.kakokicreative.in/blog/",
-      "image": "https://www.kakokicreative.in/assets/img/logo.png",
-      "description": "Insights on web design, branding, and digital marketing from KAKOKI Creative Co, a Kerala-based creative agency in Malappuram.",
-      "telephone": "+917558908826",
-      "email": "kakokicreativeco@gmail.com",
-      "priceRange": "₹₹",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Areekode",
-        "addressLocality": "Malappuram",
-        "addressRegion": "Kerala",
-        "postalCode": "673639",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 11.2396,
-        "longitude": 76.0456
-      },
-      "areaServed": [
-        {"@type": "State", "name": "Kerala"},
-        {"@type": "City", "name": "Malappuram"},
-        {"@type": "City", "name": "Areekode"},
-        {"@type": "City", "name": "Kozhikode"}
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "KAKOKI Creative Co Services",
-        "itemListElement": [
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Web Design", "url": "https://www.kakokicreative.in/web-design-malappuram/"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Brand Identity & Logo Design", "url": "https://www.kakokicreative.in/branding-areekode/"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Graphic Design"}}
-        ]
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-        "opens": "09:00",
-        "closes": "18:00"
-      }
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://www.kakokicreative.in/#website",
-      "url": "https://www.kakokicreative.in/",
-      "name": "KAKOKI Creative Co",
-      "publisher": {"@id": "https://www.kakokicreative.in/#organization"},
-      "inLanguage": "en-IN",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://www.kakokicreative.in/?s={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
     }
   ]
 }
@@ -145,145 +95,375 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="/assets/css/index-extracted.css">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','sans-serif'],display:['Poppins','sans-serif']}}}}</script>
+
+<style>
+  /* ── Blog-specific styles ── */
+  .blog-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .blog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 6px 6px 0 0 #000;
+  }
+  .tag-pill {
+    display: inline-block;
+    padding: 0.2rem 0.75rem;
+    border: 1.5px solid currentColor;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border-radius: 999px;
+  }
+  .featured-card:hover h2 { color: #facc15; }
+  .category-btn.active {
+    background: #000;
+    color: #fff;
+  }
+  .coming-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #f4f4f4;
+    border: 1.5px solid #e5e7eb;
+    font-size: 0.6rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    color: #9ca3af;
+  }
+  /* Animated underline on nav */
+  .nav-link-blog::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width 0.25s ease;
+  }
+  .nav-link-blog:hover::after { width: 100%; }
+  .nav-link-blog.active::after { width: 100%; }
+
+  /* Scroll-reveal */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: none;
+  }
+</style>
+<!-- Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GZV0K4T7G0"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-GZV0K4T7G0');</script>
 </head>
-<body class="antialiased site-dot-grid overflow-x-hidden w-full text-gray-800">
-<header class="w-full py-6 px-8 flex items-center justify-between md:px-16 absolute top-0 z-50 bg-white bg-opacity-90 backdrop-blur-sm">
-<a class="flex items-center gap-3 logo-container" href="/">
-<img alt="KAKOKI Creative Co" class="h-10 md:h-11 w-auto" loading="lazy" src="/assets/img/logo.png"/>
-<span class="font-display font-extrabold text-3xl md:text-4xl tracking-widest uppercase mt-1 leading-none text-black">KAKOKI</span>
-</a>
-<div class="flex gap-4 items-center">
-<a aria-label="Home" class="md:hidden" href="/"><i class="fa-solid fa-home text-2xl"></i></a>
-</div>
-<nav class="hidden md:flex gap-10 font-sans font-medium text-base items-center">
-<a class="nav-link text-black hover:text-gray-600 transition" href="/">Home</a>
-<a class="nav-link text-black hover:text-gray-600 transition" href="/#services">Services</a>
-<a class="nav-link font-bold text-black border-b-2 border-black" href="/blog/">Blog</a>
-<a class="nav-link text-black hover:text-gray-600 transition" href="/contact/">Contact</a>
-</nav>
+
+<body class="antialiased site-dot-grid overflow-x-hidden w-full text-gray-800 bg-white">
+
+<!-- ── HEADER ── -->
+<header class="w-full py-5 px-6 md:px-16 flex items-center justify-between fixed top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+  <a class="flex items-center gap-3" href="/">
+    <img alt="KAKOKI Creative Co" class="h-9 md:h-10 w-auto" loading="eager" src="/assets/img/logo.png">
+    <span class="font-display font-black text-2xl md:text-3xl tracking-widest uppercase leading-none text-black">KAKOKI</span>
+  </a>
+  <nav class="hidden md:flex gap-8 font-sans font-medium text-sm items-center">
+    <a class="nav-link-blog text-gray-600 hover:text-black transition" href="/">Home</a>
+    <a class="nav-link-blog text-gray-600 hover:text-black transition" href="/#services">Services</a>
+    <a class="nav-link-blog active text-black font-bold" href="/blog/">Blog</a>
+    <a class="nav-link-blog text-gray-600 hover:text-black transition" href="/contact/">Contact</a>
+    <a class="btn-sketch px-5 py-2 text-xs font-bold uppercase tracking-wider" href="https://wa.me/917558908826?text=Hi+KAKOKI%2C+I+want+to+start+a+project!" rel="noopener noreferrer" target="_blank">Start a Project</a>
+  </nav>
+  <!-- Mobile nav -->
+  <div class="flex md:hidden gap-4 items-center">
+    <a aria-label="Home" href="/"><i class="fa-solid fa-home text-xl text-gray-700"></i></a>
+    <a aria-label="Contact" class="btn-sketch px-4 py-2 text-xs font-bold" href="/contact/">Contact</a>
+  </div>
 </header>
-<main class="pt-40 pb-24 px-6 md:px-16 max-w-6xl mx-auto">
-<div class="mb-16 text-center">
-<span class="text-sm font-bold uppercase tracking-widest text-gray-500 block mb-4">KAKOKI Creative Co ·
-                Resources</span>
-<h1 class="font-display font-bold text-5xl md:text-7xl text-black mb-6 leading-tight tracking-tight">The
-                Blog</h1>
-<p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">Web design tips, branding insights, and
-                digital growth strategies for businesses in Malappuram, Kerala, and beyond.</p>
-</div>
-<!-- Featured Post -->
-<div class="mb-20">
-<span class="text-xs font-bold uppercase tracking-widest text-gray-400 block mb-6">Featured Article</span>
-<a class="group block bg-black text-white rounded-3xl p-10 md:p-16 relative overflow-hidden hover:-translate-y-1 transition-transform duration-300" href="/blog/why-every-business-in-malappuram-needs-a-professional-website-2025/">
-<div class="absolute inset-0 bg-dot-grid-20 opacity-20"></div>
-<div class="relative z-10 max-w-3xl">
-<span class="inline-block bg-white text-black text-xs font-black uppercase tracking-widest px-3 py-1 mb-6 transform -rotate-1">Web
-                        Design · Local Growth</span>
-<h2 class="font-display font-bold text-3xl md:text-5xl mb-6 leading-tight group-hover:text-yellow-400 transition-colors">
-                        Why Every Business in Malappuram Needs a Professional Website in 2025</h2>
-<p class="text-gray-400 text-lg mb-8 max-w-2xl">85% of your customers Google you before they visit.
-                        If your business doesn't show up — or shows up badly — you're losing real revenue every single
-                        day. Here's how to fix it.</p>
-<div class="flex items-center gap-6">
-<div class="text-sm text-gray-500">By <span class="text-white font-semibold">Farhan Mubeen
-                                K</span> · October 2025</div>
-<span class="text-white font-bold uppercase text-xs tracking-widest group-hover:translate-x-2 transition-transform inline-flex items-center gap-2">Read
-                            Article <i class="fa-solid fa-arrow-right"></i></span>
-</div>
-</div>
-</a>
-</div>
-<!-- Coming Soon Articles Grid -->
-<div class="mb-16">
-<h2 class="font-display font-bold text-2xl text-black mb-8 border-b-2 border-gray-100 pb-4">Coming Soon</h2>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<!-- Post 2 -->
-<div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 opacity-60">
-<span class="text-xs font-bold uppercase tracking-widest text-gray-400 block mb-3">Branding</span>
-<h3 class="font-display font-bold text-xl text-black mb-3 leading-tight">5 Signs Your Malappuram
-                        Business Needs a Logo Redesign in 2025</h3>
-<p class="text-sm text-gray-500">Logo design · Brand identity · Local SEO</p>
-</div>
-<!-- Post 3 -->
-<div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 opacity-60">
-<span class="text-xs font-bold uppercase tracking-widest text-gray-400 block mb-3">Web Design</span>
-<h3 class="font-display font-bold text-xl text-black mb-3 leading-tight">How Much Does a Website
-                        Cost in Kerala? A 2025 Pricing Guide</h3>
-<p class="text-sm text-gray-500">Pricing · Web development · Kerala businesses</p>
-</div>
-<!-- Post 4 -->
-<div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 opacity-60">
-<span class="text-xs font-bold uppercase tracking-widest text-gray-400 block mb-3">Gulf &amp; NRI</span>
-<h3 class="font-display font-bold text-xl text-black mb-3 leading-tight">Gulf NRI Entrepreneurs: Why
-                        Your Kerala Business Needs a Website Now</h3>
-<p class="text-sm text-gray-500">NRI business · Kerala market · Web design</p>
-</div>
-<!-- Post 5 -->
-<div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 opacity-60">
-<span class="text-xs font-bold uppercase tracking-widest text-gray-400 block mb-3">Local SEO</span>
-<h3 class="font-display font-bold text-xl text-black mb-3 leading-tight">How to Get Your Malappuram
-                        Business on Google's First Page</h3>
-<p class="text-sm text-gray-500">Local SEO · Google Business · Malappuram</p>
-</div>
-<!-- Post 6 -->
-<div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 opacity-60">
-<span class="text-xs font-bold uppercase tracking-widest text-gray-400 block mb-3">Graphic
-                        Design</span>
-<h3 class="font-display font-bold text-xl text-black mb-3 leading-tight">Why Kerala Businesses Are
-                        Losing Customers to Better-Looking Competitors</h3>
-<p class="text-sm text-gray-500">Graphic design · Branding · Conversion</p>
-</div>
-<!-- Post 7 -->
-<div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 opacity-60">
-<span class="text-xs font-bold uppercase tracking-widest text-gray-400 block mb-3">eCommerce</span>
-<h3 class="font-display font-bold text-xl text-black mb-3 leading-tight">Should Your Malappuram
-                        Business Start an eCommerce Site? (Honest Guide)</h3>
-<p class="text-sm text-gray-500">eCommerce · Web development · Kerala retail</p>
-</div>
-</div>
-</div>
-<!-- CTA -->
-<div class="bg-[#050505] text-white rounded-3xl p-10 md:p-16 flex flex-col items-center text-center relative overflow-hidden">
-<div class="absolute inset-0 bg-dot-grid-20 opacity-30"></div>
-<div class="relative z-10">
-<h2 class="font-display font-bold text-3xl md:text-5xl mb-4 leading-tight">Need a Website for Your
-                    Kerala Business?</h2>
-<p class="text-gray-400 text-lg mb-8 max-w-xl mx-auto">Stop reading and start building. KAKOKI Creative
-                    Co. is ready to design your perfect website.</p>
-<a class="inline-block bg-white text-black font-bold uppercase px-10 py-4 tracking-widest hover:bg-yellow-400 transition" href="/contact/">Get
-                    a Free Quote</a>
-</div>
-</div>
+
+<main>
+  <!-- ── HERO ── -->
+  <section class="pt-36 pb-16 px-6 md:px-16 max-w-6xl mx-auto">
+    <div class="reveal mb-4">
+      <span class="tag-pill text-gray-500 border-gray-300">KAKOKI Creative Co · Insights</span>
+    </div>
+    <div class="reveal flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-6">
+      <h1 class="font-display font-black text-6xl md:text-8xl text-black leading-[0.9] tracking-tighter">
+        The<br>
+        <span class="relative inline-block">
+          Blog.
+          <span class="absolute -bottom-2 left-0 w-full h-1 bg-black"></span>
+        </span>
+      </h1>
+      <p class="text-gray-500 text-lg md:text-xl max-w-sm md:text-right leading-relaxed font-sans">
+        Practical thoughts on design, branding, and growing your business online — no fluff, just what actually works.
+      </p>
+    </div>
+    <!-- Divider with post count -->
+    <div class="reveal flex items-center gap-4 pt-8 border-t border-gray-200">
+      <span class="font-display font-bold text-4xl text-black">01</span>
+      <span class="text-gray-400 text-sm">article published · more dropping soon</span>
+      <span class="ml-auto text-xs text-gray-400 uppercase tracking-widest">April 2026</span>
+    </div>
+  </section>
+
+  <!-- ── FEATURED POST ── -->
+  <section class="px-6 md:px-16 max-w-6xl mx-auto mb-20">
+    <p class="reveal text-xs font-bold uppercase tracking-widest text-gray-400 mb-5">Featured Article</p>
+    <a class="featured-card reveal group block bg-[#050505] text-white rounded-3xl p-8 md:p-14 relative overflow-hidden transition-transform duration-300 hover:-translate-y-1"
+       href="/blog/why-every-business-in-malappuram-needs-a-professional-website-2025/">
+      <!-- dot grid -->
+      <div class="absolute inset-0 bg-dot-grid-20 opacity-20 pointer-events-none"></div>
+      <!-- decorative number -->
+      <span class="absolute top-8 right-10 font-display font-black text-[120px] text-white/5 leading-none select-none hidden md:block">01</span>
+      <div class="relative z-10 max-w-3xl">
+        <div class="flex flex-wrap items-center gap-3 mb-6">
+          <span class="tag-pill text-white border-white/30">Web Design</span>
+          <span class="tag-pill text-white border-white/30">Local Growth</span>
+          <span class="tag-pill text-yellow-400 border-yellow-400">Featured</span>
+        </div>
+        <h2 class="font-display font-black text-3xl md:text-5xl mb-5 leading-tight transition-colors duration-300">
+          Why Every Business in Malappuram Needs a Professional Website in 2026
+        </h2>
+        <p class="text-gray-400 text-base md:text-lg mb-8 max-w-2xl leading-relaxed">
+          Think about the last time you looked up a local business — you Googled it, right? So do your customers. 
+          If your business doesn't have a solid online presence, you're quietly handing those sales to someone else. 
+          Here's what you can do about it.
+        </p>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
+              <i class="fa-solid fa-user text-xs text-gray-400"></i>
+            </div>
+            <div>
+              <p class="text-xs text-gray-500 uppercase tracking-widest">Written by</p>
+              <p class="text-white font-semibold text-sm">Farhan Mubeen K</p>
+            </div>
+          </div>
+          <span class="text-gray-600 text-xs hidden sm:block">·</span>
+          <span class="text-gray-500 text-sm">March 2026 · 8 min read</span>
+          <span class="sm:ml-auto inline-flex items-center gap-2 text-white font-bold text-xs uppercase tracking-widest group-hover:translate-x-2 transition-transform duration-300">
+            Read Article <i class="fa-solid fa-arrow-right"></i>
+          </span>
+        </div>
+      </div>
+    </a>
+  </section>
+
+  <!-- ── COMING SOON POSTS ── -->
+  <section class="px-6 md:px-16 max-w-6xl mx-auto mb-20">
+    <div class="reveal flex items-center justify-between mb-8">
+      <h2 class="font-display font-bold text-2xl text-black">On the Way</h2>
+      <span class="text-xs text-gray-400 uppercase tracking-widest">Publishing soon</span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Card: Branding -->
+      <div class="reveal blog-card relative bg-white border-2 border-gray-100 rounded-2xl p-7 group">
+        <span class="coming-badge">Coming Soon</span>
+        <span class="tag-pill text-gray-400 border-gray-200 mb-4 block w-fit">Branding</span>
+        <h3 class="font-display font-bold text-lg text-black mb-3 leading-snug">
+          5 Signs Your Malappuram Business Needs a Logo Redesign Right Now
+        </h3>
+        <p class="text-sm text-gray-500 leading-relaxed">
+          Your logo is usually the first impression you give. If it looks like it was made in 2010, it might be quietly hurting you.
+        </p>
+        <div class="mt-5 text-xs text-gray-400 uppercase tracking-widest">Branding · Logo Design · Identity</div>
+      </div>
+
+      <!-- Card: Pricing -->
+      <div class="reveal blog-card relative bg-white border-2 border-gray-100 rounded-2xl p-7 group">
+        <span class="coming-badge">Coming Soon</span>
+        <span class="tag-pill text-gray-400 border-gray-200 mb-4 block w-fit">Web Design</span>
+        <h3 class="font-display font-bold text-lg text-black mb-3 leading-snug">
+          How Much Does a Website Actually Cost in Kerala? (Honest 2026 Breakdown)
+        </h3>
+        <p class="text-sm text-gray-500 leading-relaxed">
+          Prices vary wildly — from ₹5,000 to ₹5 lakh. We break down what you're really paying for and what's worth it.
+        </p>
+        <div class="mt-5 text-xs text-gray-400 uppercase tracking-widest">Pricing · Web Dev · Kerala</div>
+      </div>
+
+      <!-- Card: Gulf NRI -->
+      <div class="reveal blog-card relative bg-white border-2 border-gray-100 rounded-2xl p-7 group">
+        <span class="coming-badge">Coming Soon</span>
+        <span class="tag-pill text-gray-400 border-gray-200 mb-4 block w-fit">Gulf & NRI</span>
+        <h3 class="font-display font-bold text-lg text-black mb-3 leading-snug">
+          Gulf NRI Entrepreneurs: Here's Why Your Kerala Business Needs a Website — Not Just WhatsApp
+        </h3>
+        <p class="text-sm text-gray-500 leading-relaxed">
+          Running a business back home while you're abroad is tough. A proper website makes it manageable — and scalable.
+        </p>
+        <div class="mt-5 text-xs text-gray-400 uppercase tracking-widest">NRI Business · Kerala Market</div>
+      </div>
+
+      <!-- Card: Local SEO -->
+      <div class="reveal blog-card relative bg-white border-2 border-gray-100 rounded-2xl p-7 group">
+        <span class="coming-badge">Coming Soon</span>
+        <span class="tag-pill text-gray-400 border-gray-200 mb-4 block w-fit">Local SEO</span>
+        <h3 class="font-display font-bold text-lg text-black mb-3 leading-snug">
+          How to Actually Get Your Malappuram Business on Google's First Page
+        </h3>
+        <p class="text-sm text-gray-500 leading-relaxed">
+          Local SEO isn't magic. There are clear steps — and most businesses in Malappuram skip all of them.
+        </p>
+        <div class="mt-5 text-xs text-gray-400 uppercase tracking-widest">Local SEO · Google Business</div>
+      </div>
+
+      <!-- Card: Graphic Design -->
+      <div class="reveal blog-card relative bg-white border-2 border-gray-100 rounded-2xl p-7 group">
+        <span class="coming-badge">Coming Soon</span>
+        <span class="tag-pill text-gray-400 border-gray-200 mb-4 block w-fit">Graphic Design</span>
+        <h3 class="font-display font-bold text-lg text-black mb-3 leading-snug">
+          Why Kerala Businesses Are Quietly Losing Customers to Better-Looking Competitors
+        </h3>
+        <p class="text-sm text-gray-500 leading-relaxed">
+          Visual trust is real. When two businesses offer the same thing, people pick the one that looks more credible. Every time.
+        </p>
+        <div class="mt-5 text-xs text-gray-400 uppercase tracking-widest">Design · Branding · Conversion</div>
+      </div>
+
+      <!-- Card: eCommerce -->
+      <div class="reveal blog-card relative bg-white border-2 border-gray-100 rounded-2xl p-7 group">
+        <span class="coming-badge">Coming Soon</span>
+        <span class="tag-pill text-gray-400 border-gray-200 mb-4 block w-fit">eCommerce</span>
+        <h3 class="font-display font-bold text-lg text-black mb-3 leading-snug">
+          Should Your Malappuram Business Start an Online Store? An Honest 2026 Guide
+        </h3>
+        <p class="text-sm text-gray-500 leading-relaxed">
+          Not every business needs an eCommerce site — but if yours does, here's what you need to know before spending a rupee.
+        </p>
+        <div class="mt-5 text-xs text-gray-400 uppercase tracking-widest">eCommerce · Web Dev · Retail</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── ABOUT THE BLOG ── -->
+  <section class="px-6 md:px-16 max-w-6xl mx-auto mb-20 border-t border-gray-100 pt-16">
+    <div class="reveal grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="tag-pill text-gray-500 border-gray-300 mb-4 block w-fit">Who We Are</span>
+        <h2 class="font-display font-bold text-3xl md:text-4xl text-black mb-5 leading-tight">
+          This isn't a corporate blog.<br>It's from people who actually do the work.
+        </h2>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          We're KAKOKI Creative Co — a small, focused creative studio based in Areekode, Malappuram. We design websites, build brand identities, and help Kerala businesses actually grow online.
+        </p>
+        <p class="text-gray-600 leading-relaxed">
+          This blog is just us writing down what we learn, what we see working, and what we honestly think — so you can make smarter decisions for your business without having to figure it all out yourself.
+        </p>
+      </div>
+      <div class="flex flex-col gap-5">
+        <div class="flex items-start gap-4 p-5 bg-gray-50 rounded-2xl border border-gray-100">
+          <div class="w-10 h-10 bg-black rounded-xl flex items-center justify-center flex-shrink-0">
+            <i class="fa-solid fa-pen-nib text-white text-sm"></i>
+          </div>
+          <div>
+            <p class="font-bold text-black text-sm mb-1">Written by practitioners</p>
+            <p class="text-gray-500 text-sm leading-relaxed">Every post is written by Farhan or someone on our team — not outsourced, not AI-generated.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 p-5 bg-gray-50 rounded-2xl border border-gray-100">
+          <div class="w-10 h-10 bg-black rounded-xl flex items-center justify-center flex-shrink-0">
+            <i class="fa-solid fa-location-dot text-white text-sm"></i>
+          </div>
+          <div>
+            <p class="font-bold text-black text-sm mb-1">Grounded in Kerala's market</p>
+            <p class="text-gray-500 text-sm leading-relaxed">We work with real businesses in Malappuram, Kozhikode, Kerala — what we share actually applies here.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 p-5 bg-gray-50 rounded-2xl border border-gray-100">
+          <div class="w-10 h-10 bg-black rounded-xl flex items-center justify-center flex-shrink-0">
+            <i class="fa-solid fa-bullseye text-white text-sm"></i>
+          </div>
+          <div>
+            <p class="font-bold text-black text-sm mb-1">No content marketing fluff</p>
+            <p class="text-gray-500 text-sm leading-relaxed">We skip the generic "10 tips" format. Every post has something concrete you can actually use.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section class="px-6 md:px-8 max-w-6xl mx-auto mb-24 flex justify-center">
+    <div class="reveal w-full bg-[#050505] text-white rounded-3xl p-10 md:p-16 flex flex-col items-center text-center relative overflow-hidden">
+      <div class="absolute inset-0 bg-dot-grid-20 opacity-30 pointer-events-none"></div>
+      <div class="relative z-10 max-w-2xl">
+        <span class="tag-pill text-white/50 border-white/20 mb-6 block w-fit mx-auto">Ready to grow?</span>
+        <h2 class="font-display font-black text-3xl md:text-5xl mb-4 leading-tight">
+          Got a project in mind?<br>Let's talk.
+        </h2>
+        <p class="text-gray-400 text-base md:text-lg mb-8 leading-relaxed">
+          Reading is great, but results come from doing. Tell us about your business and let's figure out what it actually needs.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a class="btn-sketch bg-white text-black px-8 py-4 font-bold uppercase tracking-wider text-sm hover:bg-yellow-400 transition"
+             href="https://wa.me/917558908826?text=Hi+KAKOKI%2C+I+read+your+blog+and+want+to+discuss+a+project!" rel="noopener noreferrer" target="_blank">
+            <i class="fa-brands fa-whatsapp mr-2"></i>Chat on WhatsApp
+          </a>
+          <a class="border border-white/30 text-white px-8 py-4 font-medium text-sm hover:border-white transition rounded-full"
+             href="/contact/">
+            Or send an email →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
-<footer class="bg-[#050505] text-white py-16 px-6 md:px-16 text-center w-full mt-16 relative z-20">
-<div class="max-w-4xl mx-auto flex flex-col items-center">
-<div class="flex flex-col items-center gap-3 mb-6">
-<img alt="Kakoki Creative Logo" class="h-16 w-auto" loading="lazy" src="/assets/img/logo-white.png"/>
-<h2 class="font-sans font-bold text-2xl md:text-3xl text-white tracking-tight mt-1">KAKOKI Creative Co
-                </h2>
-</div>
-<div class="mb-10 text-sm font-sans text-gray-300">
-<p>Areekode, Malappuram, Kerala 673639</p>
-<p><a class="hover:text-white" href="tel:+917558908826">+91 75589 08826</a> | <a class="hover:text-white" href="mailto:kakokicreativeco@gmail.com">kakokicreativeco@gmail.com</a>
-</p>
-</div>
-<div class="w-full border-t border-gray-800 pt-10 pb-4 mb-6">
-<nav class="flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm font-sans text-gray-400 mb-8">
-<a class="hover:text-white transition" href="/">Home</a>
-<a class="hover:text-white transition" href="/web-design-malappuram/">Malappuram</a>
-<a class="hover:text-white transition" href="/gulf-nri-web-design/">Gulf NRI</a>
-<a class="text-white font-bold" href="/blog/">Blog</a>
-<a class="hover:text-white transition" href="/contact/">Contact</a>
-</nav>
-</div>
-<p class="font-sans text-xs text-gray-500 uppercase tracking-widest">© 2026 Kakoki Creative Co. All
-                Rights Reserved.</p>
-</div>
+
+<!-- ── FOOTER ── -->
+<footer class="bg-[#050505] text-white py-14 px-6 md:px-16 w-full relative z-20">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 mb-10 pb-10 border-b border-gray-800">
+      <div class="flex items-center gap-3">
+        <img alt="KAKOKI Creative Co" class="h-12 w-auto" loading="lazy" src="/assets/img/logo-white.webp">
+        <div>
+          <p class="font-display font-black text-xl tracking-widest uppercase">KAKOKI</p>
+          <p class="text-gray-500 text-xs mt-0.5">Creative Co · Areekode, Malappuram</p>
+        </div>
+      </div>
+      <nav class="flex flex-wrap gap-x-8 gap-y-3 text-sm font-sans text-gray-400">
+        <a class="hover:text-white transition" href="/">Home</a>
+        <a class="hover:text-white transition" href="/web-design-malappuram/">Web Design</a>
+        <a class="hover:text-white transition" href="/branding-areekode/">Branding</a>
+        <a class="hover:text-white transition" href="/gulf-nri-web-design/">Gulf NRI</a>
+        <a class="text-white font-bold" href="/blog/">Blog</a>
+        <a class="hover:text-white transition" href="/contact/">Contact</a>
+      </nav>
+    </div>
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500 font-sans">
+      <p>© 2026 KAKOKI Creative Co. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a class="hover:text-white transition" href="tel:+917558908826">+91 75589 08826</a>
+        <span>·</span>
+        <a class="hover:text-white transition" href="mailto:kakokicreativeco@gmail.com">kakokicreativeco@gmail.com</a>
+      </div>
+    </div>
+  </div>
 </footer>
+
+<script>
+  // Scroll-reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => observer.observe(el));
+</script>
 </body>
 </html>
