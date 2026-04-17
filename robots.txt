@@ -1,43 +1,102 @@
 # KAKOKI Creative Co — robots.txt
-# Updated: 2026-04-06
+# Updated: 2026-04-17
 
-# Allow all search engines full access
+# ─────────────────────────────────────────
+# All crawlers — full site access by default
+# ─────────────────────────────────────────
 User-agent: *
 Allow: /
 
-# Explicitly allow Google to crawl all assets for rendering
+# ─────────────────────────────────────────
+# Google — explicitly allow assets for full rendering
+# ─────────────────────────────────────────
 User-agent: Googlebot
 Allow: /
 Allow: /assets/
 
-# Allow AI crawlers — full site access so content surfaces in ChatGPT, Gemini, Perplexity
+User-agent: Googlebot-Image
+Allow: /assets/img/
+
+User-agent: Googlebot-Video
+Allow: /
+
+# Google AI Overview / SGE
+User-agent: Google-Extended
+Allow: /
+
+# ─────────────────────────────────────────
+# AI Crawlers — full access for AEO/GEO
+# Ensures content surfaces in ChatGPT, Gemini, Perplexity, Claude, Grok
+# ─────────────────────────────────────────
+
+# OpenAI / ChatGPT
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
+# Perplexity AI
 User-agent: PerplexityBot
 Allow: /
 
+# Anthropic / Claude
 User-agent: anthropic-ai
 Allow: /
 
 User-agent: ClaudeBot
 Allow: /
 
+# Google Gemini
+User-agent: Gemini
+Allow: /
+
+# Meta AI
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+# Microsoft / Bing / Copilot
 User-agent: Bingbot
 Allow: /
 
-# Block low-value scrapers only
-User-agent: CCBot
-Disallow: /
+User-agent: msnbot
+Allow: /
 
+# ─────────────────────────────────────────
+# SEO Tools — rate-limited, not blocked
+# ─────────────────────────────────────────
 User-agent: SemrushBot
 Crawl-delay: 10
 
 User-agent: AhrefsBot
 Crawl-delay: 10
 
+User-agent: DotBot
+Crawl-delay: 10
+
+User-agent: MajesticBot
+Crawl-delay: 10
+
+# ─────────────────────────────────────────
+# Block low-value scrapers
+# ─────────────────────────────────────────
+User-agent: CCBot
+Disallow: /
+
+User-agent: HTTrack
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+# ─────────────────────────────────────────
 # Sitemap
+# ─────────────────────────────────────────
 Sitemap: https://www.kakokicreative.in/sitemap.xml
