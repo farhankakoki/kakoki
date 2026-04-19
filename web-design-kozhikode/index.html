@@ -232,30 +232,276 @@
 </div>
 </article>
 </main>
-<footer class="bg-[#050505] text-white py-16 px-6 md:px-16 text-center w-full mt-auto relative z-20">
-<div class="max-w-4xl mx-auto flex flex-col items-center">
-<div class="flex flex-col items-center gap-3 mb-6">
-<img alt="Kakoki Creative Logo" class="h-16 w-auto" loading="lazy" src="/assets/img/logo-white.webp"/>
-<h2 class="font-sans font-bold text-2xl md:text-3xl text-white tracking-tight mt-1">KAKOKI Creative Co</h2>
-</div>
-<div class="mb-10 text-sm font-sans text-gray-300">
-<p>Areekode, Malappuram, Kerala 673639</p>
-<p><a class="hover:text-white" href="tel:+917558908826">+91 75589 08826</a> | <a class="hover:text-white" href="mailto:kakokicreativeco@gmail.com">kakokicreativeco@gmail.com</a></p>
-</div>
-<div class="w-full border-t border-gray-800 pt-10 pb-4 mb-6">
-<nav class="flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm font-sans text-gray-400 mb-8">
-<a class="hover:text-white transition" href="/">Home</a>
-<a class="hover:text-white transition" href="/web-design-malappuram/">Malappuram</a>
-<a class="hover:text-white transition" href="/web-design-manjeri/">Manjeri</a>
-<a class="hover:text-white transition" href="/web-design-perinthalmanna/">Perinthalmanna</a>
-<a class="hover:text-white transition" href="/web-design-tirur/">Tirur</a>
-<a class="text-white font-bold" href="/web-design-kozhikode/">Kozhikode</a>
-<a class="hover:text-white transition" href="/gulf-nri-web-design/">Gulf NRI</a>
-<a class="hover:text-white transition" href="/contact/">Contact</a>
-</nav>
-</div>
-<p class="font-sans text-xs text-gray-500 uppercase tracking-widest">© 2026 Kakoki Creative Co. All Rights Reserved.</p>
-</div>
-</footer>
+    <footer class="premium-footer" id="main-footer">
+        <style>
+            :root {
+                --footer-bg: #000000;
+                --footer-title: #ffffff;
+                --footer-link: #888888;
+                --footer-link-hover: #ffffff;
+                --footer-muted: #555555;
+            }
+
+            .premium-footer {
+                width: 100%;
+                margin-top: 60px;
+                padding: 100px 0 60px;
+                background: var(--footer-bg);
+                position: relative;
+                overflow: hidden;
+                border-top: 1px solid rgba(255, 255, 255, 0.05);
+                font-family: 'Poppins', 'Inter', sans-serif;
+                clear: both;
+            }
+
+            .footer-container {
+                max-width: 1300px;
+                margin: 0 auto;
+                padding: 0 40px;
+                position: relative;
+                z-index: 10;
+            }
+
+            .footer-dots {
+                position: absolute;
+                inset: 0;
+                opacity: 0.1;
+                background-image: radial-gradient(#ffffff 1px, transparent 1px);
+                background-size: 30px 30px;
+                pointer-events: none;
+                z-index: 1;
+            }
+
+            .footer-grid {
+                display: grid;
+                grid-template-columns: 2.2fr repeat(4, 1fr);
+                gap: 60px;
+                margin-bottom: 100px;
+            }
+
+            .footer-col-title {
+                color: var(--footer-title);
+                font-size: 11px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.25em;
+                margin-bottom: 40px;
+                opacity: 0.8;
+            }
+
+            .footer-brand-logo {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                margin-bottom: 30px;
+                text-decoration: none;
+            }
+
+            .footer-brand-logo img {
+                height: 52px;
+                width: auto;
+                filter: brightness(0) invert(1);
+            }
+
+            .footer-brand-logo span {
+                color: #fff;
+                font-size: 28px;
+                font-weight: 600;
+                letter-spacing: 0.02em;
+                text-transform: none;
+            }
+
+            .footer-brand-desc {
+                color: var(--footer-muted);
+                font-size: 15px;
+                line-height: 1.8;
+                margin-bottom: 35px;
+                max-width: 340px;
+            }
+
+            .footer-socials {
+                display: flex;
+                gap: 12px;
+            }
+
+            .social-icon {
+                width: 44px;
+                height: 44px;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #888;
+                background: transparent;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                transition: all 0.3s ease;
+                text-decoration: none;
+                font-size: 18px;
+            }
+
+            .social-icon:hover {
+                border-color: #fff;
+                color: #fff;
+                transform: translateY(-2px);
+            }
+
+            .footer-links {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .footer-link {
+                color: var(--footer-link);
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 400;
+                transition: color 0.3s ease;
+                display: inline-block;
+            }
+
+            .footer-link:hover {
+                color: #fff;
+            }
+
+            .footer-bottom {
+                padding-top: 50px;
+                border-top: 1px solid rgba(255, 255, 255, 0.05);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .copyright-text {
+                color: var(--footer-muted);
+                font-size: 12px;
+                font-weight: 400;
+                letter-spacing: 0.05em;
+            }
+
+            .footer-legal {
+                display: flex;
+                gap: 40px;
+            }
+
+            .footer-legal a {
+                color: var(--footer-muted);
+                text-decoration: none;
+                font-size: 12px;
+                transition: color 0.3s ease;
+            }
+
+            .footer-legal a:hover {
+                color: #fff;
+            }
+
+            @media (max-width: 1100px) {
+                .footer-grid {
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 50px;
+                }
+                .footer-col.brand {
+                    grid-column: span 3;
+                    margin-bottom: 20px;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .footer-grid {
+                    grid-template-columns: 1fr 1fr;
+                }
+                .footer-col.brand {
+                    grid-column: span 2;
+                    text-align: center;
+                    align-items: center;
+                }
+                .footer-brand-logo, .footer-socials {
+                    justify-content: center;
+                }
+                .footer-bottom {
+                    flex-direction: column;
+                    gap: 30px;
+                }
+            }
+        </style>
+
+        <div class="footer-dots"></div>
+
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Brand Section -->
+                <div class="footer-col brand">
+                    <a href="/" class="footer-brand-logo">
+                        <img src="/assets/img/logo.webp" alt="KAKOKI Logo">
+                        <span style="line-height: 1.1;">KAKOKI<br>Creative Co.</span>
+                    </a>
+                    <p class="footer-brand-desc">
+                        Creating modern digital brands with precision and creative excellence. Based in Malappuram, Kerala.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="https://facebook.com/kakokicreative" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/kakokicreative" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com/in/farhanmubeenk" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/farhanmubeenk" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Capabilities Column -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Capabilities</h4>
+                    <ul class="footer-links">
+                        <li><a href="/web-design-malappuram/" class="footer-link">Web Design</a></li>
+                        <li><a href="/branding-areekode/" class="footer-link">Brand Identity</a></li>
+                        <li><a href="/creative-agency-kerala/" class="footer-link">UI/UX Design</a></li>
+                        <li><a href="/gulf-nri-web-design/" class="footer-link">NRI Projects</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Column -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="/farhan-mubeen/" class="footer-link">Our Story</a></li>
+                        <li><a href="/#team" class="footer-link">The Team</a></li>
+                        <li><a href="/contact/" class="footer-link">Contact</a></li>
+                        <li><a href="/sitemap.xml" class="footer-link">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources Column -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="/blog/" class="footer-link">Journal</a></li>
+                        <li><a href="/#portfolio" class="footer-link">Case Studies</a></li>
+                        <li><a href="/faqs/" class="footer-link">FAQs</a></li>
+                        <li><a href="/branding-areekode/" class="footer-link">Design Assets</a></li>
+                    </ul>
+                </div>
+
+                <!-- Inquiries Column -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Inquiries</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://wa.me/917558908826" class="footer-link">WhatsApp</a></li>
+                        <li><a href="mailto:kakokicreativeco@gmail.com" class="footer-link">Email</a></li>
+                        <li><a href="/contact/" class="footer-link">New Project</a></li>
+                        <li><a href="/farhan-mubeen/" class="footer-link">Founder</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright-text">© 2026 KAKOKI CREATIVE CO.</p>
+                <div class="footer-legal">
+                    <a href="/privacy-policy/">Privacy Policy</a>
+                    <a href="/terms-of-service/">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html class="scroll-smooth overflow-x-hidden" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="KAKOKI Creative Co">
+    <meta name="theme-color" content="#050505">
+
+    <title>Frequently Asked Questions — KAKOKI Creative Co.</title>
+    <meta name="description" content="Find answers to common questions about KAKOKI Creative Co.'s web design, branding, and development services.">
+
+    <link rel="canonical" href="https://kakokicreative.in/faqs/">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/k.png">
+    <link rel="apple-touch-icon" href="/assets/img/favicons/k.png">
+
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/index-extracted.css">
+    <link rel="stylesheet" href="/assets/css/tailwind-compiled.css">
+
+    <style>
+        .faq-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 160px 24px 100px;
+            font-family: 'Inter', sans-serif;
+        }
+        .faq-content h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 3.5rem;
+            margin-bottom: 60px;
+            color: #000;
+            text-align: center;
+        }
+        .faq-item {
+            margin-bottom: 25px;
+            border: 1px solid #eee;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .faq-item:hover {
+            border-color: #000;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .faq-question {
+            padding: 24px 30px;
+            font-weight: 700;
+            font-size: 1.25rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            background: #fff;
+            color: #000;
+        }
+        .faq-answer {
+            padding: 0 30px 24px;
+            color: #555;
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+        .faq-question i {
+            transition: transform 0.3s ease;
+        }
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body class="antialiased site-dot-grid w-full overflow-x-hidden max-w-full m-0 p-0">
+    <header class="w-full py-6 px-8 flex items-center justify-between md:px-16 absolute top-0 z-50 site-dot-grid">
+        <a class="flex items-center gap-3 logo-container" href="/">
+            <img alt="KAKOKI Creative Co" class="h-10 md:h-11 w-auto" src="/assets/img/logo.webp" />
+            <span class="font-display font-extrabold text-3xl md:text-4xl tracking-widest uppercase mt-1 leading-none text-black">KAKOKI</span>
+        </a>
+    </header>
+
+    <main class="faq-content">
+        <h1>FAQs</h1>
+        
+        <div class="faq-item">
+            <div class="faq-question">What services does KAKOKI offer? <i class="fa-solid fa-chevron-down"></i></div>
+            <div class="faq-answer">We specialize in bespoke web design, complete brand identity systems, UI/UX design, and specialized digital solutions for Gulf NRI entrepreneurs.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How long does a website project take? <i class="fa-solid fa-chevron-down"></i></div>
+            <div class="faq-answer">Typically, a custom website project takes between 4 to 8 weeks, depending on the complexity and the number of feedback rounds.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Do you offer ongoing support? <i class="fa-solid fa-chevron-down"></i></div>
+            <div class="faq-answer">Yes, we provide maintenance packages that include security updates, content changes, and performance optimization to keep your site running smoothly.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Can you help with rebranding? <i class="fa-solid fa-chevron-down"></i></div>
+            <div class="faq-answer">Absolutely. We help established businesses refresh their visual identity, from new logo designs to comprehensive brand guidelines that work across all platforms.</div>
+        </div>
+    </main>
+
+    <footer class="premium-footer" id="main-footer">
+        <style>
+            :root {
+                --footer-bg: #000000;
+                --footer-title: #ffffff;
+                --footer-link: #888888;
+                --footer-link-hover: #ffffff;
+                --footer-muted: #555555;
+            }
+
+            .premium-footer {
+                width: 100%;
+                margin-top: 60px; /* Reduced from 100px */
+                padding: 100px 0 60px; /* Reduced from 120px */
+                background: var(--footer-bg);
+                position: relative;
+                overflow: hidden;
+                border-top: 1px solid rgba(255, 255, 255, 0.05);
+                font-family: 'Poppins', 'Inter', sans-serif;
+                clear: both;
+            }
+
+            .footer-container {
+                max-width: 1300px;
+                margin: 0 auto;
+                padding: 0 40px;
+                position: relative;
+                z-index: 10;
+            }
+
+            .footer-dots {
+                position: absolute;
+                inset: 0;
+                opacity: 0.1;
+                background-image: radial-gradient(#ffffff 1px, transparent 1px);
+                background-size: 30px 30px;
+                pointer-events: none;
+                z-index: 1;
+            }
+
+            .footer-grid {
+                display: grid;
+                grid-template-columns: 2.2fr repeat(4, 1fr);
+                gap: 60px;
+                margin-bottom: 100px;
+            }
+
+            .footer-col-title {
+                color: var(--footer-title);
+                font-size: 11px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.25em;
+                margin-bottom: 40px;
+                opacity: 0.8;
+            }
+
+            .footer-brand-logo {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                margin-bottom: 30px;
+                text-decoration: none;
+            }
+
+            .footer-brand-logo img {
+                height: 52px;
+                width: auto;
+                filter: brightness(0) invert(1);
+            }
+
+            .footer-brand-logo span {
+                color: #fff;
+                font-size: 28px;
+                font-weight: 600;
+                letter-spacing: 0.02em;
+                text-transform: none;
+            }
+
+            .footer-brand-desc {
+                color: var(--footer-muted);
+                font-size: 15px;
+                line-height: 1.8;
+                margin-bottom: 35px;
+                max-width: 340px;
+            }
+
+            .footer-socials {
+                display: flex;
+                gap: 12px;
+            }
+
+            .social-icon {
+                width: 44px;
+                height: 44px;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #888;
+                background: transparent;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                transition: all 0.3s ease;
+                text-decoration: none;
+                font-size: 18px;
+            }
+
+            .social-icon:hover {
+                border-color: #fff;
+                color: #fff;
+                transform: translateY(-2px);
+            }
+
+            .footer-links {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .footer-link {
+                color: var(--footer-link);
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 400;
+                transition: color 0.3s ease;
+                display: inline-block;
+            }
+
+            .footer-link:hover {
+                color: #fff;
+            }
+
+            .footer-bottom {
+                padding-top: 50px;
+                border-top: 1px solid rgba(255, 255, 255, 0.05);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .copyright-text {
+                color: var(--footer-muted);
+                font-size: 12px;
+                font-weight: 400;
+                letter-spacing: 0.05em;
+            }
+
+            .footer-legal {
+                display: flex;
+                gap: 40px;
+            }
+
+            .footer-legal a {
+                color: var(--footer-muted);
+                text-decoration: none;
+                font-size: 12px;
+                transition: color 0.3s ease;
+            }
+
+            .footer-legal a:hover {
+                color: #fff;
+            }
+
+            @media (max-width: 1100px) {
+                .footer-grid {
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 50px;
+                }
+                .footer-col.brand {
+                    grid-column: span 3;
+                    margin-bottom: 20px;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .footer-grid {
+                    grid-template-columns: 1fr 1fr;
+                }
+                .footer-col.brand {
+                    grid-column: span 2;
+                    text-align: center;
+                    align-items: center;
+                }
+                .footer-brand-logo, .footer-socials {
+                    justify-content: center;
+                }
+                .footer-bottom {
+                    flex-direction: column;
+                    gap: 30px;
+                }
+            }
+        </style>
+
+        <div class="footer-dots"></div>
+
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Brand Section -->
+                <div class="footer-col brand">
+                    <a href="/" class="footer-brand-logo">
+                        <img src="/assets/img/logo.webp" alt="KAKOKI Logo">
+                        <span style="line-height: 1.1;">KAKOKI<br>Creative Co.</span>
+                    </a>
+                    <p class="footer-brand-desc">
+                        Creating modern digital brands with precision and creative excellence. Based in Malappuram, Kerala.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="https://facebook.com/kakokicreative" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/kakokicreative" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com/in/farhanmubeenk" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/farhanmubeenk" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Capabilities Column -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Capabilities</h4>
+                    <ul class="footer-links">
+                        <li><a href="/web-design-malappuram/" class="footer-link">Web Design</a></li>
+                        <li><a href="/branding-areekode/" class="footer-link">Brand Identity</a></li>
+                        <li><a href="/creative-agency-kerala/" class="footer-link">UI/UX Design</a></li>
+                        <li><a href="/gulf-nri-web-design/" class="footer-link">NRI Projects</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Column -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="/farhan-mubeen/" class="footer-link">Our Story</a></li>
+                        <li><a href="/#team" class="footer-link">The Team</a></li>
+                        <li><a href="/contact/" class="footer-link">Contact</a></li>
+                        <li><a href="/sitemap.xml" class="footer-link">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources Column -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="/blog/" class="footer-link">Journal</a></li>
+                        <li><a href="/#portfolio" class="footer-link">Case Studies</a></li>
+                        <li><a href="/faqs/" class="footer-link">FAQs</a></li>
+                        <li><a href="/branding-areekode/" class="footer-link">Design Assets</a></li>
+                    </ul>
+                </div>
+
+                <!-- Inquiries Column -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Inquiries</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://wa.me/917558908826" class="footer-link">WhatsApp</a></li>
+                        <li><a href="mailto:kakokicreativeco@gmail.com" class="footer-link">Email</a></li>
+                        <li><a href="/contact/" class="footer-link">New Project</a></li>
+                        <li><a href="/farhan-mubeen/" class="footer-link">Founder</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright-text">© 2026 KAKOKI CREATIVE CO.</p>
+                <div class="footer-legal">
+                    <a href="/privacy-policy/">Privacy Policy</a>
+                    <a href="/terms-of-service/">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

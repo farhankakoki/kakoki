@@ -44,7 +44,7 @@
       "https://kakokicreative.in/web-design-manjeri/",
       "https://kakokicreative.in/web-design-perinthalmanna/",
       "https://kakokicreative.in/web-design-tirur/",
-      "https://kakokicreative.in/blog/why-every-business-in-malappuram-needs-a-professional-website-2025/"
+      "https://kakokicreative.in/blog/why-every-business-in-malappuram-needs-a-professional-website-2026/"
     ];
 
     const ENDPOINTS = [

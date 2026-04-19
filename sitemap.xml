@@ -98,7 +98,7 @@
   </url>
 
   <url>
-    <loc>https://kakokicreative.in/blog/why-every-business-in-malappuram-needs-a-professional-website-2025/</loc>
+    <loc>https://kakokicreative.in/blog/why-every-business-in-malappuram-needs-a-professional-website-2026/</loc>
     <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -109,6 +109,28 @@
     <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <!-- PRIORITY 0.5 — Utility & Legal -->
+  <url>
+    <loc>https://kakokicreative.in/faqs/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://kakokicreative.in/privacy-policy/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://kakokicreative.in/terms-of-service/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
   </url>
 
 </urlset>
