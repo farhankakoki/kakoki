@@ -1,14 +1,15 @@
 # KAKOKI Creative Co — robots.txt
-# Updated: 2026-04-17
+# Updated: 2026-04-19
+# https://kakokicreative.in
 
 # ─────────────────────────────────────────
-# All crawlers — full site access by default
+# All crawlers — full site access
 # ─────────────────────────────────────────
 User-agent: *
 Allow: /
 
 # ─────────────────────────────────────────
-# Google — explicitly allow assets for full rendering
+# Google — explicitly allow all assets for full rendering
 # ─────────────────────────────────────────
 User-agent: Googlebot
 Allow: /
@@ -26,43 +27,36 @@ Allow: /
 
 # ─────────────────────────────────────────
 # AI Crawlers — full access for AEO/GEO
-# Ensures content surfaces in ChatGPT, Gemini, Perplexity, Claude, Grok
+# Ensures content surfaces in ChatGPT, Gemini, Perplexity, Claude
 # ─────────────────────────────────────────
 
-# OpenAI / ChatGPT
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
-# Perplexity AI
 User-agent: PerplexityBot
 Allow: /
 
-# Anthropic / Claude
 User-agent: anthropic-ai
 Allow: /
 
 User-agent: ClaudeBot
 Allow: /
 
-# Google Gemini
 User-agent: Gemini
 Allow: /
 
-# Meta AI
 User-agent: meta-externalagent
 Allow: /
 
 User-agent: FacebookBot
 Allow: /
 
-# Apple
 User-agent: Applebot
 Allow: /
 
-# Microsoft / Bing / Copilot
 User-agent: Bingbot
 Allow: /
 
@@ -85,7 +79,7 @@ User-agent: MajesticBot
 Crawl-delay: 10
 
 # ─────────────────────────────────────────
-# Block low-value scrapers
+# Block low-value scrapers only
 # ─────────────────────────────────────────
 User-agent: CCBot
 Disallow: /
@@ -93,10 +87,7 @@ Disallow: /
 User-agent: HTTrack
 Disallow: /
 
-User-agent: DataForSeoBot
-Disallow: /
-
 # ─────────────────────────────────────────
-# Sitemap
+# Sitemap — non-www HTTPS canonical
 # ─────────────────────────────────────────
-Sitemap: https://www.kakokicreative.in/sitemap.xml
+Sitemap: https://kakokicreative.in/sitemap.xml
