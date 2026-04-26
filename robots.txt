@@ -90,4 +90,4 @@ Disallow: /
 # ─────────────────────────────────────────
 # Sitemap — non-www HTTPS canonical
 # ─────────────────────────────────────────
-Sitemap: https://kakokicreative.in/sitemap.xml
+Sitemap: https://www.kakokicreative.in/sitemap.xml

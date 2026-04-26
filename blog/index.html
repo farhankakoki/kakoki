@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html class="scroll-smooth overflow-x-hidden" lang="en">
 <head>
 <meta charset="UTF-8">
@@ -7,8 +7,8 @@
 <meta name="author" content="KAKOKI Creative Co">
 <meta name="theme-color" content="#050505">
 
-<title>Web Design & Branding Blog — KAKOKI Creative Co</title>
-<meta name="description" content="Real talk on web design, branding, and growing your business online — written by the team at KAKOKI Creative Co in Malappuram, Kerala.">
+<title>Kakoki Creative Co | Blog</title>
+<meta name="description" content="Kakoki Creative Co offers expert digital marketing, graphic design, and web development services across Areekode, Kondotty, Manjeri, Kozhikode, and nearby areas.">
 
 <link rel="canonical" href="https://www.kakokicreative.in/blog/">
 <link rel="alternate" hreflang="en-IN" href="https://www.kakokicreative.in/blog/">
@@ -95,13 +95,37 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="/assets/css/index-extracted.css">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','sans-serif'],display:['Poppins','sans-serif']}}}}</script>
+<link rel="stylesheet" href="/assets/css/tailwind-compiled.css">
 
 <style>
+  .eyebrow-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.45rem 0.9rem;
+    border: 1.5px solid #000;
+    background: rgba(255,255,255,0.92);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+  .eyebrow-chip::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: #000;
+  }
+  .section-frame {
+    background: rgba(255,255,255,0.94);
+    border: 2px solid #000;
+    box-shadow: -8px 8px 0 0 #000;
+  }
   /* ── Blog-specific styles ── */
   .blog-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -178,47 +202,116 @@
     opacity: 1;
     transform: none;
   }
+  .blog-card {
+    border: 2px solid #000;
+    background: rgba(255,255,255,0.96);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .blog-card:hover {
+    box-shadow: -6px 6px 0 0 #000;
+  }
+  .featured-card {
+    border: 2px solid #000;
+    box-shadow: -8px 8px 0 0 #000;
+  }
+  .footer-brand-logo {
+    gap: 0 !important;
+  }
+  .footer-brand-logo img {
+    height: 56px !important;
+  }
+  .footer-brand-logo span {
+    display: none !important;
+  }
+  .blog-hero-kicker > span:first-child {
+    display: none;
+  }
+  main > section:first-of-type {
+    padding-top: 10rem !important;
+    padding-bottom: 3rem !important;
+  }
+  main > section:first-of-type > .reveal:nth-child(2) {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2rem !important;
+    margin-bottom: 2.5rem !important;
+  }
+  main > section:first-of-type h1 {
+    font-size: clamp(3.5rem, 9vw, 6rem) !important;
+    line-height: 0.95 !important;
+    letter-spacing: -0.04em !important;
+    text-transform: none !important;
+    max-width: 58rem !important;
+  }
+  main > section:first-of-type h1 .relative.inline-block {
+    display: inline !important;
+    position: static !important;
+  }
+  main > section:first-of-type h1 .relative.inline-block .absolute {
+    display: none !important;
+  }
+  main > section:first-of-type > .reveal:nth-child(2) > p {
+    max-width: 48rem !important;
+    text-align: left !important;
+    font-size: 1.25rem !important;
+    color: #4b5563 !important;
+  }
+  main > section:first-of-type > .reveal:last-child {
+    padding-top: 2.5rem !important;
+    border-top: 1px solid #d1d5db !important;
+  }
 </style>
 <!-- Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GZV0K4T7G0"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-GZV0K4T7G0');</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Kakoki Creative Co",
+  "url": "https://kakokicreative.in",
+  "areaServed": [
+    "Areekode","Kondotty","Manjeri","Mukkam",
+    "Tirur","Kizhisseri","Parinthalmanna","Kozhikode"
+  ]
+}
+</script>
+    <meta name="keywords" content="kakoki, kakoki creative co, kakoki digital, kakoki web design, kakoki branding, web design malappuram, branding kerala">
 </head>
 
 <body class="antialiased site-dot-grid overflow-x-hidden w-full text-gray-800 bg-white">
 
 <!-- ── HEADER ── -->
-<header class="w-full py-5 px-6 md:px-16 flex items-center justify-between fixed top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+<header class="w-full py-6 px-8 flex items-center justify-between md:px-16 absolute top-0 z-50 bg-white bg-opacity-90 backdrop-blur-sm">
   <a class="flex items-center gap-3" href="/">
-    <img alt="KAKOKI Creative Co" class="h-9 md:h-10 w-auto" loading="eager" src="/assets/img/logo.png">
-    <span class="font-display font-black text-2xl md:text-3xl tracking-widest uppercase leading-none text-black">KAKOKI</span>
+    <img alt="Kakoki Creative Co Blog" class="h-11 md:h-12 w-auto" loading="eager" src="/assets/img/logo.png">
   </a>
-  <nav class="hidden md:flex gap-8 font-sans font-medium text-sm items-center">
-    <a class="nav-link-blog text-gray-600 hover:text-black transition" href="/">Home</a>
-    <a class="nav-link-blog text-gray-600 hover:text-black transition" href="/#services">Services</a>
-    <a class="nav-link-blog active text-black font-bold" href="/blog/">Blog</a>
-    <a class="nav-link-blog text-gray-600 hover:text-black transition" href="/contact/">Contact</a>
-    <a class="btn-oval ml-4" href="https://wa.me/917558908826?text=Hi+KAKOKI%2C+I+want+to+start+a+project!" rel="noopener noreferrer" target="_blank">Start a Project</a>
+  <nav class="hidden md:flex gap-10 font-sans font-medium text-base items-center">
+    <a class="nav-link text-black hover:text-gray-600 transition" href="/">Home</a>
+    <a class="nav-link text-black hover:text-gray-600 transition" href="/#services">Services</a>
+    <a class="nav-link text-black font-semibold" href="/blog/">Blog</a>
+    <a class="nav-link text-black hover:text-gray-600 transition" href="/contact/">Contact</a>
+    <a class="ml-2 inline-block bg-black text-white font-bold text-xs uppercase tracking-widest px-5 py-2.5 hover:bg-gray-800 transition" href="https://wa.me/917558908826?text=Hi+KAKOKI%2C+I+want+to+start+a+project!" rel="noopener noreferrer" target="_blank">Start a Project</a>
   </nav>
   <!-- Mobile nav -->
   <div class="flex md:hidden gap-4 items-center">
-    <a aria-label="Home" href="/"><i class="fa-solid fa-home text-xl text-gray-700"></i></a>
-    <a aria-label="Contact" class="btn-sketch px-4 py-2 text-xs font-bold" href="/contact/">Contact</a>
+    <a aria-label="Home" href="/"><i class="fa-solid fa-home text-2xl text-gray-700"></i></a>
   </div>
 </header>
 
 <main>
-  <section class="pt-24 pb-16 px-6 md:px-16 max-w-[1300px] mx-auto">
-    <div class="reveal mb-8">
+  <section class="pt-40 pb-12 px-6 md:px-16 max-w-6xl mx-auto">
+    <div class="mb-8 blog-hero-kicker">
       <span class="text-[10px] font-black uppercase tracking-[0.3em] text-gray-400 border border-gray-200 px-3 py-1.5 rounded-full inline-block">KAKOKI Creative Co · Insights</span>
+      <span class="eyebrow-chip">KAKOKI Insights</span>
     </div>
-    <div class="reveal flex flex-col md:flex-row md:items-end md:justify-between gap-10 mb-12">
-      <h1 class="font-display font-black text-7xl md:text-[180px] text-black leading-[0.8] tracking-[-0.06em] uppercase">
-        The<br>
+    <div class="flex flex-col gap-8 mb-12">
+      <h1 class="font-display font-black text-7xl md:text-[180px] text-black leading-[0.8] tracking-[-0.06em] uppercase">Kakoki Blog — The<br>
         <span class="relative inline-block">
           Blog.
           <span class="absolute bottom-2 md:bottom-3 left-0 w-[80%] h-[4px] md:h-[6px] bg-black"></span>
-        </span>
-      </h1>
+        </span></h1>
       <p class="text-gray-500 text-lg md:text-xl max-w-sm md:text-right leading-relaxed font-sans font-medium">
         Practical thoughts on design, branding, and growing your business online — no fluff, just what actually works.
       </p>
@@ -455,7 +548,7 @@
                 position: relative;
                 overflow: hidden;
                 border-top: 1px solid rgba(255, 255, 255, 0.05);
-                font-family: 'Poppins', 'Inter', sans-serif;
+                font-family: 'Space Grotesk', 'Space Grotesk', sans-serif;
                 clear: both;
             }
 
@@ -471,7 +564,7 @@
                 position: absolute;
                 inset: 0;
                 opacity: 0.1;
-                background-image: radial-gradient(#ffffff 1px, transparent 1px);
+                background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
                 background-size: 30px 30px;
                 pointer-events: none;
                 z-index: 1;
@@ -481,7 +574,7 @@
                 display: grid;
                 grid-template-columns: 2.2fr repeat(4, 1fr);
                 gap: 60px;
-                margin-bottom: 100px;
+                margin-bottom: 40px;
             }
 
             .footer-col-title {
@@ -640,8 +733,8 @@
                 <!-- Brand Section -->
                 <div class="footer-col brand">
                     <a href="/" class="footer-brand-logo">
-                        <img src="/assets/img/logo.webp" alt="KAKOKI Logo">
-                        <span style="line-height: 1.1;">KAKOKI<br>Creative Co.</span>
+                        <img src="/assets/img/logo.png" alt="Kakoki Creative Co Blog">
+                        
                     </a>
                     <p class="footer-brand-desc">
                         Creating modern digital brands with precision and creative excellence. Based in Malappuram, Kerala.
@@ -669,8 +762,8 @@
                 <div class="footer-col">
                     <h4 class="footer-col-title">Company</h4>
                     <ul class="footer-links">
-                        <li><a href="/farhan-mubeen/" class="footer-link">Our Story</a></li>
-                        <li><a href="/#team" class="footer-link">The Team</a></li>
+                        <li><a href="/#about" class="footer-link">About</a></li>
+                        <li><a href="/#team" class="footer-link">Team</a></li>
                         <li><a href="/contact/" class="footer-link">Contact</a></li>
                         <li><a href="/sitemap.xml" class="footer-link">Sitemap</a></li>
                     </ul>
@@ -680,10 +773,10 @@
                 <div class="footer-col">
                     <h4 class="footer-col-title">Resources</h4>
                     <ul class="footer-links">
-                        <li><a href="/blog/" class="footer-link">Journal</a></li>
-                        <li><a href="/#portfolio" class="footer-link">Case Studies</a></li>
+                        <li><a href="/blog/" class="footer-link">Blog</a></li>
+                        <li><a href="/#portfolio" class="footer-link">Portfolio</a></li>
                         <li><a href="/faqs/" class="footer-link">FAQs</a></li>
-                        <li><a href="/branding-areekode/" class="footer-link">Design Assets</a></li>
+                        <li><a href="/branding-areekode/" class="footer-link">Resources</a></li>
                     </ul>
                 </div>
 
@@ -693,7 +786,7 @@
                     <ul class="footer-links">
                         <li><a href="https://wa.me/917558908826" class="footer-link">WhatsApp</a></li>
                         <li><a href="mailto:kakokicreativeco@gmail.com" class="footer-link">Email</a></li>
-                        <li><a href="/contact/" class="footer-link">New Project</a></li>
+                        <li><a href="/contact/" class="footer-link">Start a Project</a></li>
                         <li><a href="/farhan-mubeen/" class="footer-link">Founder</a></li>
                     </ul>
                 </div>
@@ -707,7 +800,19 @@
                 </div>
             </div>
         </div>
-    </footer>
+    
+<!-- SEO Footer Block -->
+<div class="kakoki-seo-footer" style="padding: 40px 20px; font-family: sans-serif; font-size: 13px; color: #666; text-align: center; max-width: 1000px; margin: 0 auto; line-height: 1.6;">
+    <p>Kakoki Creative Co is a trusted digital marketing and design agency delivering professional services in Areekode and surrounding areas.</p>
+    <p>Kakoki Creative Co provides digital marketing, graphic design, and web development services across Areekode, Kondotty, Manjeri, Mukkam, Tirur, Kizhisseri, Parinthalmanna, and Kozhikode.</p>
+    <p style="margin-top: 15px;">
+        Discover more:
+        <a href="/web-design-malappuram/" style="color: #444; text-decoration: underline;">Kakoki digital marketing in Areekode</a> | 
+        <a href="/branding-areekode/" style="color: #444; text-decoration: underline;">Kakoki graphic design in Manjeri</a> | 
+        <a href="/web-design-kozhikode/" style="color: #444; text-decoration: underline;">Kakoki web development in Kozhikode</a>
+    </p>
+</div>
+</footer>
 
 <script>
   // Scroll-reveal
@@ -724,3 +829,9 @@
 </script>
 </body>
 </html>
+
+
+
+
+
+

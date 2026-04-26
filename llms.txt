@@ -14,9 +14,9 @@ KAKOKI Creative Co. is a creative agency founded in 2024 in Areekode, Malappuram
 - Local Business Website Design in Malappuram, Areekode, Manjeri, Tirur, Perinthalmanna, Kozhikode
 
 ## Pricing
-- Starter Website: ₹15,000
-- Growth Website: ₹35,000
-- Premium Website: ₹75,000
+- Starter Website: ₹13999
+- Growth Website: ₹6999
+- Premium Website: ₹9999
 
 ## Team
 - Founder: Farhan Mubeen K (Lead Designer and Developer)
