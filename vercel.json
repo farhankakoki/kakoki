@@ -1,7 +1,47 @@
 {
   "cleanUrls": true,
   "trailingSlash": true,
-  "redirects": [],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "kakokicreative.in"
+        }
+      ],
+      "destination": "https://www.kakokicreative.in/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "kakokicreative.live"
+        }
+      ],
+      "destination": "https://www.kakokicreative.in/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.kakokicreative.live"
+        }
+      ],
+      "destination": "https://www.kakokicreative.in/$1",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/((?!assets/).*)",
+      "destination": "/index.html"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
@@ -35,3 +75,4 @@
     }
   ]
 }
+
