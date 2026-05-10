@@ -37,7 +37,7 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="/assets/css/index-extracted.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/tailwind-compiled.css">
   <script type="application/ld+json">
   {
@@ -51,7 +51,7 @@
         "image": "https://www.kakokicreative.in/assets/img/logo.webp?v=1.1",
         "telephone": "+917558908826",
         "email": "hello@kakokicreative.in",
-        "priceRange": "??",
+        "priceRange": "Rs. 15,000+",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Areekode",
@@ -105,8 +105,7 @@
     ]
   }
   </script>
-  <style>
-    .eyebrow-chip {
+  <style>.eyebrow-chip {
       display: inline-flex;
       align-items: center;
       gap: 10px;
@@ -117,48 +116,36 @@
       font-weight: 700;
       letter-spacing: 0.16em;
       text-transform: uppercase;
-    }
-
-    .eyebrow-chip::before {
+    }.eyebrow-chip::before {
       content: "";
       width: 8px;
       height: 8px;
       border-radius: 999px;
       background: #000;
-    }
-
-    .section-frame {
+    }.section-frame {
       background: rgba(255,255,255,0.92);
       border: 2px solid #000;
       box-shadow: -8px 8px 0 0 #000;
-    }
-
-    .service-card {
+    }.service-card {
       background: rgba(255,255,255,0.96);
       border: 2px solid #000;
-      transition: transform .25s ease, box-shadow .25s ease;
-    }
-
-    .service-card:hover {
+      transition: transform.25s ease, box-shadow.25s ease;
+    }.service-card:hover {
       transform: translateY(-4px);
       box-shadow: -6px 6px 0 0 #000;
-    }
-
-    .section-rule {
+    }.section-rule {
       width: 100px;
       height: 18px;
-      opacity: .35;
+      opacity:.35;
       margin: 0 auto;
-    }
-
-    .faq-entry + .faq-entry {
+    }.faq-entry +.faq-entry {
       border-top: 1px solid rgba(0,0,0,0.12);
     }
   </style>
     <meta name="keywords" content="kakoki, kakoki creative co, kakoki digital, kakoki web design, kakoki branding, web design malappuram, branding kerala">
 </head>
 <body class="antialiased site-dot-grid overflow-x-hidden w-full text-gray-800">
-<header class="w-full py-6 px-8 flex items-center justify-between md:px-16 absolute top-0 z-50 bg-white bg-opacity-90 backdrop-blur-sm">
+<header class="w-full py-6 px-8 flex items-center justify-between md:px-16 fixed top-0 z-[100] bg-white bg-opacity-90 backdrop-blur-sm">
   <a class="flex items-center gap-3 logo-container" href="/">
     <img alt="Kakoki Creative Co Creative Agency in Kerala" class="h-12 md:h-14 w-auto" loading="lazy" src="/assets/img/logo.webp?v=1.1"/>
   </a>
@@ -344,7 +331,7 @@
         Ready to build a sharper brand presence across Kerala?
       </h2>
       <p class="font-sans text-gray-300 text-lg md:text-xl leading-relaxed mb-10">
-        Let’s shape the website, branding, and creative system your business actually needs to stand out and convert better.
+        Let - s shape the website, branding, and creative system your business actually needs to stand out and convert better.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a class="inline-flex items-center justify-center bg-white text-black font-bold uppercase px-10 py-4 tracking-widest hover:bg-gray-200 transition" href="/contact/">Book Free Consultation</a>
@@ -356,16 +343,13 @@
 
   <!-- VisionOS-inspired Minimal Footer -->
     <footer class="premium-footer" id="main-footer">
-        <style>
-            :root {
+        <style>:root {
                 --footer-bg: #000000;
                 --footer-title: #ffffff;
                 --footer-link: #888888;
                 --footer-link-hover: #ffffff;
                 --footer-muted: #555555;
-            }
-
-            .premium-footer {
+            }.premium-footer {
                 width: 100%;
                 margin-top: 60px;
                 padding: 100px 0 60px;
@@ -375,17 +359,13 @@
                 border-top: 1px solid rgba(255, 255, 255, 0.05);
                 font-family: 'Space Grotesk', 'Space Grotesk', sans-serif;
                 clear: both;
-            }
-
-            .footer-container {
+            }.footer-container {
                 max-width: 1300px;
                 margin: 0 auto;
                 padding: 0 40px;
                 position: relative;
                 z-index: 10;
-            }
-
-            .footer-dots {
+            }.footer-dots {
                 position: absolute;
                 inset: 0;
                 opacity: 0.1;
@@ -393,16 +373,12 @@
                 background-size: 30px 30px;
                 pointer-events: none;
                 z-index: 1;
-            }
-
-            .footer-grid {
+            }.footer-grid {
                 display: grid;
                 grid-template-columns: 2.2fr repeat(4, 1fr);
                 gap: 60px;
                 margin-bottom: 40px;
-            }
-
-            .footer-col-title {
+            }.footer-col-title {
                 color: var(--footer-title);
                 font-size: 11px;
                 font-weight: 700;
@@ -410,35 +386,25 @@
                 letter-spacing: 0.25em;
                 margin-bottom: 40px;
                 opacity: 0.8;
-            }
-
-            .footer-brand-logo {
+            }.footer-brand-logo {
                 display: flex;
                 align-items: center;
                 gap: 0;
                 margin-bottom: 30px;
                 text-decoration: none;
-            }
-
-            .footer-brand-logo img {
+            }.footer-brand-logo img {
                 height: 56px;
                 width: auto;
-            }
-
-            .footer-brand-desc {
+            }.footer-brand-desc {
                 color: var(--footer-muted);
                 font-size: 15px;
                 line-height: 1.8;
                 margin-bottom: 35px;
                 max-width: 340px;
-            }
-
-            .footer-socials {
+            }.footer-socials {
                 display: flex;
                 gap: 12px;
-            }
-
-            .social-icon {
+            }.social-icon {
                 width: 44px;
                 height: 44px;
                 border-radius: 8px;
@@ -451,91 +417,67 @@
                 transition: all 0.3s ease;
                 text-decoration: none;
                 font-size: 18px;
-            }
-
-            .social-icon:hover {
+            }.social-icon:hover {
                 border-color: #fff;
                 color: #fff;
                 transform: translateY(-2px);
-            }
-
-            .footer-links {
+            }.footer-links {
                 list-style: none;
                 padding: 0;
                 margin: 0;
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
-            }
-
-            .footer-link {
+            }.footer-link {
                 color: var(--footer-link);
                 text-decoration: none;
                 font-size: 14px;
                 font-weight: 400;
                 transition: color 0.3s ease;
                 display: inline-block;
-            }
-
-            .footer-link:hover {
+            }.footer-link:hover {
                 color: #fff;
-            }
-
-            .footer-bottom {
+            }.footer-bottom {
                 padding-top: 50px;
                 border-top: 1px solid rgba(255, 255, 255, 0.05);
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-            }
-
-            .copyright-text {
+            }.copyright-text {
                 color: var(--footer-muted);
                 font-size: 12px;
                 font-weight: 400;
                 letter-spacing: 0.05em;
-            }
-
-            .footer-legal {
+            }.footer-legal {
                 display: flex;
                 gap: 40px;
-            }
-
-            .footer-legal a {
+            }.footer-legal a {
                 color: var(--footer-muted);
                 text-decoration: none;
                 font-size: 12px;
                 transition: color 0.3s ease;
-            }
-
-            .footer-legal a:hover {
+            }.footer-legal a:hover {
                 color: #fff;
             }
 
-            @media (max-width: 1100px) {
-                .footer-grid {
+            @media (max-width: 1100px) {.footer-grid {
                     grid-template-columns: repeat(3, 1fr);
                     gap: 50px;
-                }
-                .footer-col.brand {
+                }.footer-col.brand {
                     grid-column: span 3;
                     margin-bottom: 20px;
                 }
             }
 
-            @media (max-width: 768px) {
-                .footer-grid {
+            @media (max-width: 768px) {.footer-grid {
                     grid-template-columns: 1fr 1fr;
-                }
-                .footer-col.brand {
+                }.footer-col.brand {
                     grid-column: span 2;
                     text-align: center;
                     align-items: center;
-                }
-                .footer-brand-logo, .footer-socials {
+                }.footer-brand-logo,.footer-socials {
                     justify-content: center;
-                }
-                .footer-bottom {
+                }.footer-bottom {
                     flex-direction: column;
                     gap: 30px;
                 }
@@ -608,7 +550,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p class="copyright-text">© 2026 KAKOKI CREATIVE CO.</p>
+                <p class="copyright-text">(c) 2026 KAKOKI CREATIVE CO.</p>
                 <div class="footer-legal">
                     <a href="/privacy-policy/">Privacy Policy</a>
                     <a href="/terms-of-service/">Terms of Service</a>
@@ -632,6 +574,7 @@
   
 </body>
 </html>
+
 
 
 

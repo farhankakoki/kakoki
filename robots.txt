@@ -88,6 +88,8 @@ User-agent: HTTrack
 Disallow: /
 
 # ─────────────────────────────────────────
-# Sitemap — non-www HTTPS canonical
+# Sitemap & Host Configuration
 # ─────────────────────────────────────────
+Host: https://www.kakokicreative.in
 Sitemap: https://www.kakokicreative.in/sitemap.xml
+Sitemap: https://www.kakokicreative.in/llms.txt

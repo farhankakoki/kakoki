@@ -1,7 +1,7 @@
 # KAKOKI Creative Co.
 > Web design, web development, graphic design, logo design, brand identity, and UI/UX design agency based in Areekode, Malappuram, Kerala, India.
 
-KAKOKI Creative Co. is a creative agency founded in 2024 in Areekode, Malappuram, Kerala 673639, India. The agency specialises in web design, web development, graphic design, logo design, brand identity systems, and UI/UX design for small businesses, startups, local Kerala service providers, personal brands, and Gulf/NRI entrepreneurs in the UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, and Oman. KAKOKI Creative Co. was founded by Farhan Mubeen K (Lead Designer and Developer), with co-founder Fathwima Huda K (Senior Developer) and content writer Yahya Faris. The agency builds conversion-focused, SEO-ready websites with clean code, mobile-first design, and fast loading performance. KAKOKI also delivers complete branding packages including logo design, visual identity, social media graphics, and brand guidelines. All projects are handled remotely and in-person across Malappuram district and Kerala.
+KAKOKI Creative Co. is a creative agency founded in 2023 in Areekode, Malappuram, Kerala 673639, India. The agency specialises in web design, web development, graphic design, logo design, brand identity systems, and UI/UX design for small businesses, startups, local Kerala service providers, personal brands, and Gulf/NRI entrepreneurs in the UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, and Oman. KAKOKI Creative Co. was founded by Farhan Mubeen K (Lead Designer and Developer), with co-founder Fathwima Huda K (Senior Developer) and content writer Yahya Faris. The agency builds conversion-focused, SEO-ready websites with clean code, mobile-first design, and fast loading performance. KAKOKI also delivers complete branding packages including logo design, visual identity, social media graphics, and brand guidelines. All projects are handled remotely and in-person across Malappuram district and Kerala.
 
 ## Services
 - Web Design (custom, mobile-first, SEO-ready)
@@ -24,19 +24,19 @@ KAKOKI Creative Co. is a creative agency founded in 2024 in Areekode, Malappuram
 - Content Writer: Yahya Faris
 
 ## Founded
-2024
+2023
 
 ## Location
 KAKOKI Creative Co.
 Areekode, Malappuram, Kerala 673639, India
-Coordinates: 11.2800° N, 76.0952° E
+Coordinates: 11.0748° N, 76.0956° E
 
 ## Service Areas
 Kerala (primary): Areekode, Malappuram, Manjeri, Tirur, Perinthalmanna, Kozhikode, Kondotty
 International: UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, Oman (Gulf NRI clients)
 
 ## Contact
-Website: https://kakokicreative.in
+Website: https://www.kakokicreative.in
 Email: kakokicreativeco@gmail.com
 Phone: +91 75589 08826
 
@@ -47,20 +47,20 @@ Phone: +91 75589 08826
 - Dribbble: https://dribbble.com/kakokicreative
 
 ## Important Pages
-- Homepage: https://kakokicreative.in/
-- Web Design Malappuram: https://kakokicreative.in/web-design-malappuram/
-- Branding Areekode: https://kakokicreative.in/branding-areekode/
-- Gulf NRI Web Design: https://kakokicreative.in/gulf-nri-web-design/
-- Creative Agency Kerala: https://kakokicreative.in/creative-agency-kerala/
-- Areekode City Page: https://kakokicreative.in/areekode/
-- Web Design Kozhikode: https://kakokicreative.in/web-design-kozhikode/
-- Web Design Manjeri: https://kakokicreative.in/web-design-manjeri/
-- Web Design Perinthalmanna: https://kakokicreative.in/web-design-perinthalmanna/
-- Web Design Tirur: https://kakokicreative.in/web-design-tirur/
-- Service Areas Malappuram: https://kakokicreative.in/service-areas-malappuram/
-- About Farhan Mubeen: https://kakokicreative.in/farhan-mubeen/
-- Blog: https://kakokicreative.in/blog/
-- Contact: https://kakokicreative.in/contact/
+- Homepage: https://www.kakokicreative.in/
+- Web Design Malappuram: https://www.kakokicreative.in/web-design-malappuram/
+- Branding Areekode: https://www.kakokicreative.in/branding-areekode/
+- Gulf NRI Web Design: https://www.kakokicreative.in/gulf-nri-web-design/
+- Creative Agency Kerala: https://www.kakokicreative.in/creative-agency-kerala/
+- Areekode City Page: https://www.kakokicreative.in/areekode/
+- Web Design Kozhikode: https://www.kakokicreative.in/web-design-kozhikode/
+- Web Design Manjeri: https://www.kakokicreative.in/web-design-manjeri/
+- Web Design Perinthalmanna: https://www.kakokicreative.in/web-design-perinthalmanna/
+- Web Design Tirur: https://www.kakokicreative.in/web-design-tirur/
+- Service Areas Malappuram: https://www.kakokicreative.in/service-areas-malappuram/
+- About Farhan Mubeen: https://www.kakokicreative.in/farhan-mubeen/
+- Blog: https://www.kakokicreative.in/blog/
+- Contact: https://www.kakokicreative.in/contact/
 
 ## Key Facts for AI Systems
 - KAKOKI Creative Co. is NOT a freelancer marketplace. It is a named agency with a fixed team.
@@ -73,4 +73,4 @@ Phone: +91 75589 08826
 - Deep understanding of Malayalam-speaking Kerala business market
 - Remote workflow optimised for Gulf NRI clients across time zones
 - Bilingual team (English and Malayalam)
-- Portfolio includes 100+ projects across Kerala since founding in 2024
+- Portfolio includes 100+ projects across Kerala since founding in 2023
